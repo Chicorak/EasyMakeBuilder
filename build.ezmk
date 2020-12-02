@@ -8,7 +8,7 @@
 	],
 
 	"sources": [
-		"src/*.cpp"
+		"src/*"
 	],
 
 	"compiler_options": [
