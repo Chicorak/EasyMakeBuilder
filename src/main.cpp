@@ -1,12 +1,14 @@
 #include "string"
 #include "fstream"
 #include "iostream"
+#include "thread"
+#include "chrono"
 #include <rang.hpp>
 
 
 int main() 
 {   
-   
+    bool op = true;
     std::string ProjectName;
     std::string Compiler;
     std::string Output;
@@ -33,8 +35,15 @@ int main()
     std::cin >> Include;
     
     std::cout << rang::style::italic << "Extra Compiler Options ( sperated by space ): ";    
-    std::cin >> CompilerOptions;
+    while(op == true) 
+    {   
+        std::cin.get();
+        if (std::cin.get() == '\n')
+        {
+            op = false;
+        }
 
+    }
     std::ofstream o("autobuild.ezmk");
     o << "{" << std::endl;
     o << "  \"Project\":\"" << ProjectName << "\"," << std::endl;
