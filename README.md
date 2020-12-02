@@ -1,6 +1,6 @@
 # EasyMakeBuilder
 builder for easymake\
-<h3>compiling<h3>
+<h3>compiling</h3>
   <code>Easymake</code>
 <br>
 <br>
