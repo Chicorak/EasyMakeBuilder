@@ -1,8 +1,6 @@
 #include "string"
 #include "fstream"
 #include "iostream"
-#include "thread"
-#include "chrono"
 #include <rang.hpp>
 
 
