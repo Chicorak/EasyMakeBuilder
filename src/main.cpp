@@ -28,7 +28,7 @@ int main()
     std::cout << rang::style::italic << "Output File Name: ";    
     std::cin >> Output; 
     
-    std::cout << rang::style::italic << "Sources (example: src/*c): ";    
+    std::cout << rang::style::italic << "Sources (example: src/*.c): ";    
     std::cin >> Source;
     
     std::cout << rang::style::italic << "Include Folder: ";    
