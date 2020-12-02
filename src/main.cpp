@@ -1,7 +1,7 @@
 #include "string"
 #include "fstream"
 #include "iostream"
-#include <termcolor.hpp>
+#include <rang.hpp>
 
 
 int main() 
@@ -14,25 +14,25 @@ int main()
     std::string Include;
     std::string CompilerOptions; 
 
-    std::cout << termcolor::blue << termcolor::bold << "EasyMakeBuilder" << std::endl  << "//Made By CodePoison;" << std::endl << std::endl << std::endl;
+    std::cout << rang::style::bold << "EasyMakeBuilder" << std::endl << rang::style::reset  << "//Made By CodePoison;" << std::endl << std::endl << std::endl;
     
     
-    std::cout << termcolor::reset << termcolor::green << "Name of Project: ";
+    std::cout << rang::style::italic  << "Name of Project: ";
     std::cin >> ProjectName; 
     
-    std::cout << termcolor::green << "Compiler: ";
+    std::cout << rang::style::italic << "Compiler: ";
     std::cin >> Compiler; 
     
-    std::cout << termcolor::green << "Output File Name: ";    
+    std::cout << rang::style::italic << "Output File Name: ";    
     std::cin >> Output; 
     
-    std::cout << termcolor::green << "Sources (example: src/*c): ";    
+    std::cout << rang::style::italic << "Sources (example: src/*c): ";    
     std::cin >> Source;
     
-    std::cout << termcolor::green << "Include Folder: ";    
+    std::cout << rang::style::italic << "Include Folder: ";    
     std::cin >> Include;
     
-    std::cout << termcolor::green << "Extra Compiler Options ( sperated by space ): ";    
+    std::cout << rang::style::italic << "Extra Compiler Options ( sperated by space ): ";    
     std::cin >> CompilerOptions;
 
     std::ofstream o("autobuild.ezmk");
